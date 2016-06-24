@@ -1,0 +1,184 @@
+body {
+    background: #F5F5F1;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background: white;
+}
+nav {
+    padding: 0 36px;
+    &.branding {
+        height: 80px;
+        border-bottom: 1px solid #E1E3DF;
+    }
+    &.main {
+        border-bottom: 1px solid #DCDCD9;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+        margin-bottom: 30px;
+        a {
+            display: inline-block;
+            color: #777;
+            font-size: 14px;
+            line-height: 40px;
+            border-bottom: 3px solid white;
+            margin-right: 15px;
+            &:hover {
+                border-bottom-color: #F56400;
+            }
+        }
+    }
+    .logo {
+        float: left;
+        width: 75px;
+        height: 0;
+        padding-top: 78px;
+        background: url(../images/logo.png) center no-repeat;
+        overflow: hidden;
+        margin: 2px 20px 0 0;
+    }
+    .search-form {
+        position: relative;
+        float: left;
+        width: 35%;
+        height: 100%;
+        form {
+            position: relative;
+            height: 100%;
+        }
+        div {
+            position: absolute;
+            left: 0;
+            right: 40px;
+            height: 100%;
+        }
+        input {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            margin-top: -17px;
+            border: 1px solid #CFCBC8;
+            height: 20px;
+            background: #fbfbfa;
+            box-shadow: inset 0 1px 2px #E9E9E8;
+            font-size: 14px;
+            padding: 6px 10px;
+            border-radius: 3px 0 0 3px;
+            border-right: none;
+        }
+        button {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -17px;
+            height: 34px;
+            border: 1px solid black;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            background: #34A8C4;
+            border: 1px solid #2F98B1;
+            color: white;
+            padding: 7px 15px 8px;
+            border-radius: 0 3px 3px 0;
+        }
+    }
+    .account-links {
+        position: relative;
+        float: right;
+        height: 100%;
+        line-height: 80px;
+        padding-right: 10px;
+        a {
+            color: #0192B5;
+            box-sizing: border-box;
+            padding: 8px;
+            font-size: 14px;
+            &.sign-in {
+                border: 1px solid;
+                border-radius: 3px;
+                margin-right: 18px;
+            }
+            &.cart {
+                position: relative;
+                top: 10px;
+                color: #000;
+                opacity: .6;
+                font-size: 12px;
+                background: url(../images/cart.png) center/22px no-repeat;
+                padding-top: 50px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    right: 43px;
+                    top: 22px;
+                    bottom: 5px;
+                    background-color: #eee;
+                    width: 1px;
+                }
+                &:hover {
+                    opacity: 1;
+                    text-decoration: none;
+                }
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+main {
+    position: relative;
+    section {
+        box-sizing: border-box;
+    }
+    .side-panel {
+        float: left;
+        width: 250px;
+        padding: 0 18px 0 36px;
+        h5 {
+            font-size: 13px;
+            margin: 0 0 10px;
+        }
+        ul {
+            border-radius: 3px;
+            background: white;
+            border: 1px solid #E1E3DF;
+            border-bottom-color: #CBCCC9;
+            margin: 0 0 12px;
+            padding: 12px;
+            font-size: 13px;
+            a {
+                display: block;
+                color: #0192B5;
+                margin: 0 0 12px 6px;
+            }
+            a.cat {
+                color: black;
+                margin: 0 0 6px 0;
+            }
+            :last-child a {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .main-content {
+        overflow: auto;
+        padding: 0 36px 0 6px;
+        img {
+            max-width: 100px;
+        }
+    }
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
