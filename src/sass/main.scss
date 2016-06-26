@@ -1,5 +1,6 @@
 body {
     background: #F5F5F1;
+    min-width: 417px;
 }
 ul {
     list-style: none;
@@ -144,7 +145,6 @@ nav {
 }
 main {
     position: relative;
-    min-width: 417px;
     section {
         box-sizing: border-box;
     }
@@ -364,6 +364,11 @@ footer {
         padding-left: 36px;
     }
     .side-panel {
+        display: none;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .results-info .right {
         display: none;
     }
 }
