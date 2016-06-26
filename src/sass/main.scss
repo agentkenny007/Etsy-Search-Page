@@ -20,7 +20,7 @@ header {
 nav {
     padding: 0 36px;
     &.branding {
-        min-height: 80px;
+        height: 80px;
         border-bottom: 1px solid #E1E3DF;
     }
     &.main {
@@ -336,9 +336,10 @@ footer {
         width: 50%;
     }
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 680px) {
     nav.branding {
         overflow: auto;
+        height: auto;
     }
     nav.main {
         position: relative;
