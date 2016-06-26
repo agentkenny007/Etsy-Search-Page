@@ -19,7 +19,7 @@ header {
 nav {
     padding: 0 36px;
     &.branding {
-        height: 80px;
+        min-height: 80px;
         border-bottom: 1px solid #E1E3DF;
     }
     &.main {
@@ -144,6 +144,7 @@ nav {
 }
 main {
     position: relative;
+    min-width: 417px;
     section {
         box-sizing: border-box;
     }
@@ -323,5 +324,55 @@ footer {
     }
     a {
         color: #666;
+    }
+}
+@media only screen and (max-width: 1030px) {
+    main .main-content .results li {
+        width: 33.333%;
+    }
+}
+@media only screen and (max-width: 835px) {
+    main .main-content .results li {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 640px) {
+    nav.branding {
+        overflow: auto;
+    }
+    nav.main {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
+    nav .search-form {
+        position: relative;
+        top: 10px;
+        width: 100%;
+        &:after {
+            content: '';
+            display: block;
+            height: 50px;
+        }
+    }
+    nav .account-links {
+        position: absolute;
+        top: 0;
+        right: 18px;
+    }
+    main .main-content {
+        padding-left: 36px;
+    }
+    .side-panel {
+        display: none;
+    }
+}
+@media only screen and (max-width: 420px) {
+    nav .logo {
+        float: none;
+        margin: auto;
+    }
+    .account-links {
+        display: none;
     }
 }
